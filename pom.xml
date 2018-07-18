@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.shaneking</groupId>
     <artifactId>org.shaneking</artifactId>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
   </parent>
 
   <artifactId>org.shaneking.g2048</artifactId>
@@ -81,7 +81,7 @@
     <dependency>
       <groupId>org.shaneking</groupId>
       <artifactId>org.shaneking.skava</artifactId>
-      <version>0.0.4</version>
+      <version>0.0.5</version>
     </dependency>
 
     <dependency>
@@ -137,6 +137,7 @@
       <plugin><!--mvn package appbundle:bundle-->
         <groupId>sh.tak.appbundler</groupId>
         <artifactId>appbundle-maven-plugin</artifactId>
+        <version>${sh.tak.appbundler_appbundle-maven-plugin.version}</version>
         <configuration>
           <mainClass>org.shaneking.g2048.startup.Startup</mainClass>
         </configuration>
