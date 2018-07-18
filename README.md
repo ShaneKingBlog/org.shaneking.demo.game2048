@@ -1,4 +1,4 @@
-## [2048][]
+# [2048][]
 Game 2048, More to see [shaneking.org][].
 
 ## Dependencies
@@ -8,7 +8,8 @@ Game 2048, More to see [shaneking.org][].
 [![][travis img]][travis]
 
 ## Test
-[![][coverage img]][coverage]
+[![][codecov img]][codecov]
+[![][codacy img]][codacy]
 
 ## Release
 [![][mavenbadge img]][mavenbadge]
