@@ -5,12 +5,10 @@ import com.google.common.collect.Maps;
 import java.awt.*;
 import java.util.Map;
 
-public class ColorCons
-{
+public class ColorCons {
   public static final Map<Integer, Color> COLOR_MAP = Maps.newHashMap();
 
-  static
-  {
+  static {
     COLOR_MAP.put((int) Math.scalb(0, 0), new Color(255, 255, 255));    //0
     COLOR_MAP.put((int) Math.scalb(1, 1), new Color(255, 192, 192));    //2
     COLOR_MAP.put((int) Math.scalb(1, 2), new Color(255, 128, 128));    //4

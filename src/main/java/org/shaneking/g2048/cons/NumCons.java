@@ -5,18 +5,15 @@ import org.shaneking.skava.ling.util.Random0;
 
 import java.util.List;
 
-public class NumCons
-{
+public class NumCons {
   private static final List<Integer> NUM_LIST = Lists.newArrayList();
 
-  static
-  {
+  static {
     NUM_LIST.add((int) Math.scalb(1, 1));
     NUM_LIST.add((int) Math.scalb(1, 2));
   }
 
-  public static int roundNum()
-  {
+  public static int roundNum() {
     return NUM_LIST.get(Random0.nextRangeInt(NUM_LIST.size()));
   }
 }

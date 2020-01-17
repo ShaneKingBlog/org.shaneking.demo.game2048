@@ -8,9 +8,7 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.awt.event.MouseWheelListener;
 
-public class GridButton extends JButton
-{
-
+public class GridButton extends JButton {
   /**
    *
    */
@@ -25,14 +23,12 @@ public class GridButton extends JButton
   /**
    * This is a constructor
    */
-  public GridButton()
-  {
+  public GridButton() {
     //do nothing
     this(0, 0);
   }
 
-  public GridButton(int xValue, int yVlaue)
-  {
+  public GridButton(int xValue, int yVlaue) {
     //do nothing
     super();
     this.xValue = xValue;
@@ -46,8 +42,7 @@ public class GridButton extends JButton
    * @see java.awt.Component#addMouseListener(MouseListener)
    */
   @Override
-  public synchronized void addMouseListener(MouseListener l)
-  {
+  public synchronized void addMouseListener(MouseListener l) {
     //do nothing
     //        super.addMouseListener(l);
   }
@@ -56,8 +51,7 @@ public class GridButton extends JButton
    * @see java.awt.Component#addMouseMotionListener(MouseMotionListener)
    */
   @Override
-  public synchronized void addMouseMotionListener(MouseMotionListener l)
-  {
+  public synchronized void addMouseMotionListener(MouseMotionListener l) {
     //do nothing
     //        super.addMouseMotionListener(l);
   }
@@ -66,8 +60,7 @@ public class GridButton extends JButton
    * @see java.awt.Component#addMouseWheelListener(MouseWheelListener)
    */
   @Override
-  public synchronized void addMouseWheelListener(MouseWheelListener l)
-  {
+  public synchronized void addMouseWheelListener(MouseWheelListener l) {
     //do nothing
     //        super.addMouseWheelListener(l);
   }
@@ -77,8 +70,7 @@ public class GridButton extends JButton
    *
    * @return the number
    */
-  public int getNumber()
-  {
+  public int getNumber() {
     return number;
   }
 
@@ -87,8 +79,7 @@ public class GridButton extends JButton
    *
    * @param number the number to set
    */
-  public void setNumber(int number)
-  {
+  public void setNumber(int number) {
     this.number = number;
     setText("" + (0 == number ? "" : number));
     setFont(new Font("Courier New", Font.BOLD, 56 - (String.valueOf(number).length() * 8)));
@@ -100,8 +91,7 @@ public class GridButton extends JButton
    *
    * @return the xValue
    */
-  public int getxValue()
-  {
+  public int getxValue() {
     return xValue;
   }
 
@@ -110,8 +100,7 @@ public class GridButton extends JButton
    *
    * @param xValue the xValue to set
    */
-  public void setxValue(int xValue)
-  {
+  public void setxValue(int xValue) {
     this.xValue = xValue;
   }
 
@@ -120,8 +109,7 @@ public class GridButton extends JButton
    *
    * @return the yValue
    */
-  public int getyValue()
-  {
+  public int getyValue() {
     return yValue;
   }
 
@@ -130,9 +118,7 @@ public class GridButton extends JButton
    *
    * @param yValue the yValue to set
    */
-  public void setyValue(int yValue)
-  {
+  public void setyValue(int yValue) {
     this.yValue = yValue;
   }
-
 }

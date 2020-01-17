@@ -7,20 +7,17 @@ import javax.swing.*;
 import java.awt.*;
 
 @Slf4j
-public class Startup
-{
+public class Startup {
   /**
    * The coder is very lazy for this main method
    *
    * @param args void
    */
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     //do nothing
     SwingUtilities.invokeLater(() -> {
       //do nothing
-      try
-      {
+      try {
         log.info("2048 starting!");
         JFrame g2048Frame = new JFrame();
         g2048Frame.setLayout(new BorderLayout());
@@ -32,17 +29,13 @@ public class Startup
         g2048Frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         g2048Frame.setResizable(false);
         g2048Frame.setVisible(true);
-      }
-      catch (Exception e)
-      {
+      } catch (Exception e) {
         log.error(e.toString(), e);
       }
     });
   }
 
-  private static String getTitle()
-  {
+  private static String getTitle() {
     return "Game 2048";
   }
-
 }
