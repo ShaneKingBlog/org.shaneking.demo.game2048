@@ -32,8 +32,8 @@ ShaneKing is released under [Apache-2.0][].
 [travis]:https://travis-ci.org/ShaneKing/org.shaneking.g2048
 [travis img]:https://secure.travis-ci.org/ShaneKing/org.shaneking.g2048.png
 
-[codecov]:https://codecov.io/gh/ShaneKing/org.shaneking.g2048/branch/master
-[codecov img]:https://codecov.io/github/ShaneKing/org.shaneking.g2048/coverage.svg?branch=master
+[codecov]:https://codecov.io/gh/ShaneKing/org.shaneking.g2048
+[codecov img]:https://codecov.io/gh/ShaneKing/org.shaneking.g2048/branch/master/graph/badge.svg
 [codacy]:https://www.codacy.com/app/ShaneKing/org-shaneking-g2048
 [codacy img]:https://api.codacy.com/project/badge/Grade/f51ab5d62ea04e3eac72fe998e890528
 [saucelabs]:https://saucelabs.com/u/ShaneKing
