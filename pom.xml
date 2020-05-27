@@ -23,7 +23,7 @@
   </organization>
   <licenses>
     <license>
-      <name>MIT</name>
+      <name>Apache-2.0</name>
       <url>https://opensource.org/licenses/Apache-2.0</url>
       <distribution>repo</distribution>
       <comments>ShaneKing is released under Apache-2.0 License.</comments>
