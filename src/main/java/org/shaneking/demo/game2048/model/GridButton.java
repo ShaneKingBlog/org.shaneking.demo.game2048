@@ -1,6 +1,6 @@
-package org.shaneking.g2048.model;
+package org.shaneking.demo.game2048.model;
 
-import org.shaneking.g2048.cons.ColorCons;
+import org.shaneking.demo.game2048.cons.ColorCons;
 
 import javax.swing.*;
 import java.awt.*;

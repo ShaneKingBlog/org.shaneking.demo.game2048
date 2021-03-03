@@ -1,12 +1,12 @@
-package org.shaneking.g2048.cons;
+package org.shaneking.demo.game2048.cons;
 
-import com.google.common.collect.Maps;
+import org.shaneking.ling.zero.util.Map0;
 
 import java.awt.*;
 import java.util.Map;
 
 public class ColorCons {
-  public static final Map<Integer, Color> COLOR_MAP = Maps.newHashMap();
+  public static final Map<Integer, Color> COLOR_MAP = Map0.newHashMap();
 
   static {
     COLOR_MAP.put((int) Math.scalb(0, 0), new Color(255, 255, 255));    //0

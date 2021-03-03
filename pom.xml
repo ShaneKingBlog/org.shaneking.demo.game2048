@@ -4,23 +4,19 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.shaneking</groupId>
-    <artifactId>org.shaneking</artifactId>
-    <version>0.0.5</version>
+    <groupId>org.shaneking.ling</groupId>
+    <artifactId>org.shaneking.ling</artifactId>
+    <version>0.241.1.1</version>
   </parent>
 
-  <artifactId>org.shaneking.g2048</artifactId>
-  <version>${project.parent.version}</version>
+  <groupId>org.shaneking.blog</groupId>
+  <artifactId>org.shaneking.demo.game2048</artifactId>
+  <version>0.0.1</version>
   <packaging>jar</packaging>
 
   <name>Game2048</name>
-  <description>Game 2048</description>
-  <url>https://github.com/ShaneKing/org.shaneking.g2048</url>
-
-  <organization>
-    <name>Azolla</name>
-    <url>https://github.com/Azolla</url>
-  </organization>
+  <description>Game 2048 for ShaneKing</description>
+  <url>https://github.com/ShaneKing/org.shaneking.demo.game2048</url>
   <licenses>
     <license>
       <name>Apache-2.0</name>
@@ -29,85 +25,18 @@
       <comments>ShaneKing is released under Apache-2.0 License.</comments>
     </license>
   </licenses>
-  <developers>
-    <developer>
-      <id>ShaneKing</id>
-      <name>ShaneKing</name>
-      <email>github@azolla.org</email>
-      <url>https://github.com/ShaneKing</url>
-      <organization>Azolla</organization>
-      <organizationUrl>https://github.com/Azolla</organizationUrl>
-      <roles>
-        <role>Developer</role>
-      </roles>
-      <timezone>+8</timezone>
-      <properties>
-        <dept>No</dept>
-      </properties>
-    </developer>
-  </developers>
-  <contributors>
-    <contributor>
-      <name>Maogu</name>
-      <email>git@azolla.org</email>
-      <url>https://github.com/Maogu</url>
-      <organization>Azolla</organization>
-      <organizationUrl>https://github.com/Azolla</organizationUrl>
-      <roles>
-        <role>Developer</role>
-      </roles>
-      <timezone>+8</timezone>
-      <properties>
-        <dept>No</dept>
-      </properties>
-    </contributor>
-  </contributors>
-
-  <scm>
-    <connection>scm:git:git@github.com:ShaneKing/org.shaneking.g2048.git</connection>
-    <developerConnection>scm:git:git@github.com:ShaneKing/org.shaneking.g2048.git</developerConnection>
-    <url>git@github.com:ShaneKing/org.shaneking.g2048.git</url>
-  </scm>
-  <issueManagement>
-    <system>Github</system>
-    <url>https://github.com/ShaneKing/org.shaneking.g2048/issues</url>
-  </issueManagement>
-  <ciManagement>
-    <system>Travis-CI</system>
-    <url>https://travis-ci.org/ShaneKing/org.shaneking.g2048</url>
-  </ciManagement>
 
   <dependencies>
     <dependency>
-      <groupId>org.shaneking</groupId>
-      <artifactId>org.shaneking.skava</artifactId>
-      <version>0.0.5</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.google.guava</groupId>
-      <artifactId>guava</artifactId>
+      <groupId>org.shaneking.ling</groupId>
+      <artifactId>org.shaneking.ling.zero</artifactId>
+      <version>${project.parent.version}</version>
     </dependency>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
+      <groupId>org.shaneking.ling</groupId>
+      <artifactId>org.shaneking.ling.test</artifactId>
+      <version>${project.parent.version}</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
     </dependency>
   </dependencies>
 
@@ -129,17 +58,17 @@
             <manifest>
               <!--<addClasspath>true</addClasspath>-->
               <!--<classpathPrefix>lib/</classpathPrefix>-->
-              <mainClass>org.shaneking.g2048.startup.Startup</mainClass>
+              <mainClass>org.shaneking.demo.game2048.startup.Startup</mainClass>
             </manifest>
           </archive>
         </configuration>
       </plugin>
-      <plugin><!--mvn package appbundle:bundle-->
+      <plugin><!--mvn clean package appbundle:bundle-->
         <groupId>sh.tak.appbundler</groupId>
         <artifactId>appbundle-maven-plugin</artifactId>
-        <version>${sh.tak.appbundler_appbundle-maven-plugin.version}</version>
+        <version>${sh.tak.appbundler_appbundle-maven-plugin_version}</version>
         <configuration>
-          <mainClass>org.shaneking.g2048.startup.Startup</mainClass>
+          <mainClass>org.shaneking.demo.game2048.startup.Startup</mainClass>
         </configuration>
         <executions>
           <execution>

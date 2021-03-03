@@ -1,10 +1,10 @@
-package org.shaneking.g2048.panel;
+package org.shaneking.demo.game2048.panel;
 
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import org.shaneking.g2048.cons.NumCons;
-import org.shaneking.g2048.model.GridButton;
-import org.shaneking.skava.ling.util.Random0;
+import org.shaneking.demo.game2048.cons.NumCons;
+import org.shaneking.demo.game2048.model.GridButton;
+import org.shaneking.ling.zero.security.SR0;
+import org.shaneking.ling.zero.util.List0;
+import org.shaneking.ling.zero.util.Map0;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +19,7 @@ public class G2048Panel extends JPanel {
    *
    */
   private static final long serialVersionUID = 7581667051127144281L;
-  private static final Map<Integer, GridButton> gridButtonMap = Maps.newHashMap();
+  private static final Map<Integer, GridButton> gridButtonMap = Map0.newHashMap();
 
   private static G2048Panel instance;
 
@@ -401,7 +401,7 @@ public class G2048Panel extends JPanel {
 
   private GridButton roundGridButton() {
     GridButton gridButton;
-    List<GridButton> freeGridButtonList = Lists.newArrayList();
+    List<GridButton> freeGridButtonList = List0.newArrayList();
     for (int i = 0; i < 16; i++) {
       gridButton = gridButtonMap.get(i);
       if (gridButton.getNumber() == 0) {
@@ -410,7 +410,7 @@ public class G2048Panel extends JPanel {
     }
     gridButton = null;
     if (freeGridButtonList.size() > 0) {
-      gridButton = freeGridButtonList.get(Random0.nextRangeInt(freeGridButtonList.size()));
+      gridButton = freeGridButtonList.get(Math.abs(SR0.nextInt(freeGridButtonList.size())));
     }
     return gridButton;
   }

@@ -1,7 +1,7 @@
-package org.shaneking.g2048.startup;
+package org.shaneking.demo.game2048.startup;
 
 import lombok.extern.slf4j.Slf4j;
-import org.shaneking.g2048.panel.G2048Panel;
+import org.shaneking.demo.game2048.panel.G2048Panel;
 
 import javax.swing.*;
 import java.awt.*;
